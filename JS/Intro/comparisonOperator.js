@@ -29,3 +29,29 @@ Ans ${strictInequality} its type is ${typeof strictInequality}`);
 let Inequality=val1!=val2
 console.log(`val1=${val1} != val2=${val2}
 Ans ${Inequality} its type is ${typeof Inequality}`);
+/*
+> greater than a>b
+< less than a<b
+> greater than or equal to
+<= less than oe equal to
+*/
+let numb3=20;
+let numb4=10;
+
+let str1="a"
+let str2="b"
+
+console.log(`numb3=${numb3} and numb4=${numb4}`)
+console.log(`str1=${str1} and str2=${str2}`)
+
+console.log(`numb3>numb4${numb3>numb4}`)
+console.log(`str2>str1${str2>str1}`)
+
+console.log(`numb>=numb4${numb3>=numb4}`)
+console.log(`str2>=str1${str2>=str1}`)
+
+console.log(`numb3<numb4${numb3<numb4}`)
+console.log(`str2<str1${str2<str1}`)
+
+console.log(`numb3<=numb4${numb3<=numb4}`)
+console.log(`str2<=str1${str2<=str1}`)

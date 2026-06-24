@@ -10,7 +10,7 @@ falsey:
 4. null
 5. undefined
 6. "" (empty string)
-7. NaN
+7. NaN (not a number)
 
 Anything that is not falsey is truthy
 truthy || falsey -> truthy

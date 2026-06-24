@@ -52,6 +52,7 @@ console.log(`val1=${val1} val2=${val2} val1&&val2=${result1}`);
 
 console.log(`Mercy is age greater than 18 or she has more than 20k in her account: 
   ${is_greater_than_18 || has_more_than_20k}`);
-
+/* Or atleast one statement has to be true 
+*/
 console.log(`This is not true = ${true}`);
 console.log(`This is not false = ${false}`);

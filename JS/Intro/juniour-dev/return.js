@@ -143,3 +143,4 @@ function sayMyName6() {
 let scenario6 = sayMyName6();
 
 console.log(`Function returned ${scenario6}`);
+

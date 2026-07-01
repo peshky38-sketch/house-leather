@@ -1,0 +1,88 @@
+/*
+1. Named Function
+
+2. Anonymous Function (without a name)
+   -> A function can be assigned to a variable.
+   -> A variable can reference a function.
+*/
+
+// Named function
+function areCircle(r) {
+    return 3.142 * r * r; // area of a circle
+}
+
+let age = 23;
+
+let samsAge = age; // age = 23
+
+// ac now references the function
+let ac = areCircle;
+
+/*
+What is the value of ac and what is it?
+Hint: use typeof
+*/
+
+console.log(ac);
+console.log(typeof ac);
+
+// Call the function using the variable
+console.log(ac(5));
+
+// Compare with the original function
+console.log(areCircle(5));
+
+
+/*
+1. Create a function of your choice. Use a named function.
+
+2. Assign that function to a variable called test.
+
+3. Directly equate your variable to the function definition.
+
+4. Remove the original function.
+
+5. Try calling the variable and try calling the original function.
+   Make an observation.
+
+6. Remove the name of the function since it is useless.
+
+7. Anonymous Function (function without a name).
+*/
+
+
+// Step 1, 2, 3, 6 and 7
+
+let test = function (name) {
+    console.log(`Hello ${name}! Welcome to JavaScript.`);
+};
+
+// Step 5
+
+console.log("Calling the variable:");
+test("Rachel");
+
+// Observation:
+// This works because the variable "test"
+// now references the function.
+
+console.log(typeof test); // function
+
+/*
+The original function was removed.
+
+If you try something like:
+
+greet("Rachel");
+
+you will get:
+
+ReferenceError: greet is not defined
+
+because the function no longer has a name.
+Only the variable "test" points to it.
+*/
+
+// Another function call
+test("Angela");
+test("Samson");

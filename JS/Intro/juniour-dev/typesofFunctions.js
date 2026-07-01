@@ -86,3 +86,69 @@ Only the variable "test" points to it.
 // Another function call
 test("Angela");
 test("Samson");
+
+/*
+Task
+
+Create a function that prints an alert for the current time.
+
+Requirements:
+- Does not take any parameters.
+- Prints an alert showing the current date and time.
+- Prints the current timestamp in the console.
+- Test your function by calling it.
+*/
+
+function currentTimeAlert() {
+
+    // Create a Date object
+    const currentDate = new Date();
+
+    // Current date and time
+    const currentTime = currentDate.toLocaleString("en-KE", {
+        timeZone: "Africa/Nairobi"
+    });
+
+    // Current timestamp
+    const timeStamp = currentDate.toISOString();
+
+    // Show the current time in an alert
+    alert(`Current Date & Time: ${currentTime}`);
+
+    // Print the timestamp in the console
+    console.log(`Current Date & Time: ${currentTime}`);
+    console.log(`Time Stamp: ${timeStamp}`);
+    console.log(`Time Zone: Africa/Nairobi`);
+}
+
+// Test the function
+currentTimeAlert();
+
+/*
+Task:
+Create an arrow function that:
+
+1. Prints an alert for the current time.
+2. Takes no parameters.
+3. Prints the current timestamp and time zone in the console.
+4. Test the function by calling it.
+*/
+
+const currentTime = () => {
+
+    const now = new Date();
+
+    const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+    alert(`Current Date & Time: ${now.toLocaleString()}`);
+
+    console.log(`Current Date & Time: ${now.toLocaleString()}`);
+    console.log(`Time Stamp: ${now.toISOString()}`);
+    console.log(`Time Zone: ${timeZone}`);
+};
+
+// Test the function
+currentTime();
+const functionName = () => {
+    // code
+};

@@ -137,5 +137,49 @@ console.log(`Classic: ${car["is_it_a_classic"]}, Type: ${typeof car["is_it_a_cla
 console.log(`Alert Function Type: ${typeof car.alert_info}`);
 console.log(`Alert Function Type: ${typeof car["alert_info"]}`);
 
+/*
+HAVE ALL YOUR CAR VALUES FROM CAR OBJECT INSIDE THE ARRAY.
+Add final element which is an array with your favourite numbers.
 
+ACCESS USING THE ARRAY ALL ITEMS.
+DO NOT USE A LOOP.
+Use bracket notation.
+*/
+
+const carArray = [
+    car["name"],
+    car["model"],
+    car["top_speed"],
+    car["colour"],
+    car["engine_information"],
+    car["manufacture"],
+    car[101],
+    car["alert_info"],
+    car["fun_fact"],
+    car["is_it_a_classic"],
+    [7, 14, 21, 50, 99] // favourite numbers
+];
+
+// Display the whole array
+console.log(carArray);
+
+// Access every array item using bracket notation (NO LOOP)
+console.log(carArray[0]);
+console.log(carArray[1]);
+console.log(carArray[2]);
+console.log(carArray[3]);
+console.log(carArray[4]);
+console.log(carArray[5]);
+console.log(carArray[6]);
+console.log(carArray[7]);
+console.log(carArray[8]);
+console.log(carArray[9]);
+console.log(carArray[10]);
+
+// Access favourite numbers individually
+console.log(carArray[10][0]);
+console.log(carArray[10][1]);
+console.log(carArray[10][2]);
+console.log(carArray[10][3]);
+console.log(carArray[10][4]);
 

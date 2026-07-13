@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "firstname": "Rachel",
+        "lastname": "Kanyoro",
+        "email": "rachel.kanyoro@example.com",
+        "gender": "female",
+        "phone": "0712345678",
+        "message": "\nDear Madam Rachel Kanyoro,\n\nWe regret to inform you that you will not be going\nto the next stage of the interview.\n\nThe reason is that you are not a good fit.\n\nKind regards,\nHR Department\n"
+    },
+    {
+        "id": 2,
+        "firstname": "John",
+        "lastname": "Mwangi",
+        "email": "john.mwangi@example.com",
+        "gender": "male",
+        "phone": "0723456789",
+        "message": "\nDear Sir John Mwangi,\n\nWe regret to inform you that you will not be going\nto the next stage of the interview.\n\nThe reason is that you are not a good fit.\n\nKind regards,\nHR Department\n"
+    },
+    {
+        "id": 3,
+        "firstname": "Mary",
+        "lastname": "Wanjiku",
+        "email": "mary.wanjiku@example.com",
+        "gender": "female",
+        "phone": "0734567890",
+        "message": "\nDear Madam Mary Wanjiku,\n\nWe regret to inform you that you will not be going\nto the next stage of the interview.\n\nThe reason is that you are not a good fit.\n\nKind regards,\nHR Department\n"
+    },
+    {
+        "id": 4,
+        "firstname": "Peter",
+        "lastname": "Otieno",
+        "email": "peter.otieno@example.com",
+        "gender": "male",
+        "phone": "0745678901",
+        "message": "\nDear Sir Peter Otieno,\n\nWe regret to inform you that you will not be going\nto the next stage of the interview.\n\nThe reason is that you are not a good fit.\n\nKind regards,\nHR Department\n"
+    },
+    {
+        "id": 5,
+        "firstname": "Grace",
+        "lastname": "Achieng",
+        "email": "grace.achieng@example.com",
+        "gender": "female",
+        "phone": "0756789012",
+        "message": "\nDear Madam Grace Achieng,\n\nWe regret to inform you that you will not be going\nto the next stage of the interview.\n\nThe reason is that you are not a good fit.\n\nKind regards,\nHR Department\n"
+    },
+    {
+        "id": 6,
+        "firstname": "James",
+        "lastname": "Kiptoo",
+        "email": "james.kiptoo@example.com",
+        "gender": "male",
+        "phone": "0767890123",
+        "message": "\nDear Sir James Kiptoo,\n\nWe regret to inform you that you will not be going\nto the next stage of the interview.\n\nThe reason is that you are not a good fit.\n\nKind regards,\nHR Department\n"
+    },
+    {
+        "id": 7,
+        "firstname": "Esther",
+        "lastname": "Chebet",
+        "email": "esther.chebet@example.com",
+        "gender": "female",
+        "phone": "0778901234",
+        "message": "\nDear Madam Esther Chebet,\n\nWe regret to inform you that you will not be going\nto the next stage of the interview.\n\nThe reason is that you are not a good fit.\n\nKind regards,\nHR Department\n"
+    },
+    {
+        "id": 8,
+        "firstname": "David",
+        "lastname": "Mutua",
+        "email": "david.mutua@example.com",
+        "gender": "male",
+        "phone": "0789012345",
+        "message": "\nDear Sir David Mutua,\n\nWe regret to inform you that you will not be going\nto the next stage of the interview.\n\nThe reason is that you are not a good fit.\n\nKind regards,\nHR Department\n"
+    },
+    {
+        "id": 9,
+        "firstname": "Sarah",
+        "lastname": "Njeri",
+        "email": "sarah.njeri@example.com",
+        "gender": "female",
+        "phone": "0790123456",
+        "message": "\nDear Madam Sarah Njeri,\n\nWe regret to inform you that you will not be going\nto the next stage of the interview.\n\nThe reason is that you are not a good fit.\n\nKind regards,\nHR Department\n"
+    },
+    {
+        "id": 10,
+        "firstname": "Michael",
+        "lastname": "Kamau",
+        "email": "michael.kamau@example.com",
+        "gender": "male",
+        "phone": "0701234567",
+        "message": "\nDear Sir Michael Kamau,\n\nWe regret to inform you that you will not be going\nto the next stage of the interview.\n\nThe reason is that you are not a good fit.\n\nKind regards,\nHR Department\n"
+    }
+]

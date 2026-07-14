@@ -73,6 +73,9 @@ function original() {
     const divElement = document.getElementById("div1");
 
     divElement.innerHTML = `
+
+<h3>List of fruits</h3>
+
         <ul>
             <li class="list-item">Apple</li>
             <li class="list-item">Banana</li>
@@ -95,6 +98,9 @@ function replace() {
     const newList = document.createElement("ul");
 
     newList.innerHTML = `
+
+<h3>List of chores</h3>
+
         <li class="list-item">Clean the house</li>
         <li class="list-item">Wash the dishes</li>
         <li class="list-item">Buy groceries</li>

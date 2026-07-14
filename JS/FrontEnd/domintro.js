@@ -40,7 +40,6 @@ console.log(queryId);
 
 // ======================================
 // 4. querySelector() - Class
-// Returns ONLY the first matching element
 // ======================================
 
 const queryClass = document.querySelector(".list-item");
@@ -51,7 +50,6 @@ console.log(queryClass);
 
 // ======================================
 // 5. querySelectorAll()
-// Returns all matching elements
 // ======================================
 
 const allItems = document.querySelectorAll(".list-item");
@@ -73,9 +71,7 @@ function original() {
     const divElement = document.getElementById("div1");
 
     divElement.innerHTML = `
-
-<h3>List of fruits</h3>
-
+        <h3>List of Fruits</h3>
         <ul>
             <li class="list-item">Apple</li>
             <li class="list-item">Banana</li>
@@ -95,12 +91,14 @@ function replace() {
 
     const divElement = document.getElementById("div1");
 
+    // Change the heading
+    const heading = divElement.querySelector("h3");
+    heading.textContent = "List of Chores";
+
+    // Create a new list
     const newList = document.createElement("ul");
 
     newList.innerHTML = `
-
-<h3>List of chores</h3>
-
         <li class="list-item">Clean the house</li>
         <li class="list-item">Wash the dishes</li>
         <li class="list-item">Buy groceries</li>
@@ -122,6 +120,10 @@ function updateFruits() {
 
     const divElement = document.getElementById("div1");
 
+    // Keep the heading as fruits
+    const heading = divElement.querySelector("h3");
+    heading.textContent = "List of Fruits";
+
     const listItems = divElement.getElementsByClassName("list-item");
 
     const fruits = [
@@ -134,7 +136,7 @@ function updateFruits() {
         listItems[i].textContent = fruits[i];
     }
 
-    console.log("updateFruits function clicked");
+    console.log("UpdateFruits function clicked");
 }
 
 

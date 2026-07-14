@@ -7,8 +7,14 @@
 </head>
 <body>
 
+ <div>
+    <h3>Mouse Coordinates</h3>
+    <p>X: <span id="x-coordinate">0</span></p>
+    <p>Y: <span id="y-coordinate">0</span></p>
+</div>
+
     <div id="div1">
-        <h3>List</h3>
+        <h3>List of fruits</h3>
 
         <ul>
             <li class="list-item">Item 1</li>
@@ -17,13 +23,17 @@
         </ul>
     </div>
 
-    <div>
+  <div>
         <button onclick="original()">Original</button>
         <button onclick="replace()">Replace</button>
         <button onclick="updateFruits()">UpdateFruits</button>
     </div>
 
-    <script src="domintro.js"></script>
+    <div>
+        <button id="btn-event-checker">Event checker</button>
+    </div>
 
+    <script src="domintro.js"></script>
+<script src="domEvent.js"></script>
 </body>
 </html>

@@ -7,14 +7,14 @@ Import the Navigation component.
 The .jsx extension is optional.
 */
 
-import Navigation from "./Amazon page/Navigation.jsx";
-
+import AmazonPage from "./Amazon page";
+import "./index.css";
 // ======================================
 // Render App
 // ======================================
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Navigation />
-  </StrictMode>
+    <AmazonPage />
+   </StrictMode>
 );

@@ -7,7 +7,7 @@ Import the Navigation component.
 The .jsx extension is optional.
 */
 
-import Props from "./Props/index.jsx";
+import Mapping from "./Mapping";
 
 // ======================================
 // Render App
@@ -15,6 +15,6 @@ import Props from "./Props/index.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Props />
+    <Mapping />
    </StrictMode>
 );

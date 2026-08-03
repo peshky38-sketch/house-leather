@@ -6,8 +6,8 @@ Import the Navigation component.
 
 The .jsx extension is optional.
 */
-
-import Mapping from "./Mapping";
+import AmazonPage2 from "./AmazonPage2.0/index.jsx";
+import "./index.css";
 
 // ======================================
 // Render App
@@ -15,6 +15,6 @@ import Mapping from "./Mapping";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Mapping />
+    <AmazonPage2 />
    </StrictMode>
 );

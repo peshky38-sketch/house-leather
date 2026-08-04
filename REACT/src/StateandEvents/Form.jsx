@@ -1,94 +1,137 @@
 /*
-How to handle form input and events
-
-This component demonstrates:
-1. Handling input change events.
-2. Handling a button click (form submission).
-3. Displaying a simple form.
+How to handle form input and events using React State
 */
 
+import { useState } from "react";
+
 function Form() {
+  // ======================================
+  // State Variables
+  // These store the values entered by the user.
+  // ======================================
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   // ======================================
-  // Runs whenever the Name input changes
+  // Name Input Event
+  // Updates the name state whenever the
+  // user types in the Name field.
   // ======================================
+
   const nameOnChange = (e) => {
-    console.log("Name is:", e.target.value);
+    setName(e.target.value);
   };
 
   // ======================================
-  // Runs whenever the Email input changes
+  // Email Input Event
+  // Updates the email state whenever the
+  // user types in the Email field.
   // ======================================
+
   const emailOnChange = (e) => {
-    console.log("Email is:", e.target.value);
+    setEmail(e.target.value);
   };
 
   // ======================================
-  // Runs whenever the Password input changes
+  // Password Input Event
+  // Updates the password state whenever the
+  // user types in the Password field.
   // ======================================
+
   const passwordOnChange = (e) => {
-    console.log("Password is:", e.target.value);
+    setPassword(e.target.value);
   };
 
   // ======================================
-  // Runs when the form is submitted
+  // Submit Button Event
+  // Displays the entered values in the console.
   // ======================================
-  const onSubmit = (e) => {
-    e.preventDefault(); // Prevents the page from refreshing
+
+  const onSubmit = () => {
     console.log("Submit button clicked");
+    console.log("Name:", name);
+    console.log("Email:", email);
+    console.log("Password:", password);
+
+    // This is where a request to an API
+    // would normally be sent.
   };
+
+  // ======================================
+  // JSX
+  // ======================================
 
   return (
     <div>
-      <h2>React Form Example</h2>
 
-      <form onSubmit={onSubmit}>
+      {/* ---------------- Name ---------------- */}
 
-        {/* Name Input */}
+      <main>
         <div>
           <label>Name</label>
-          <br />
+        </div>
+
+        <div>
           <input
             type="text"
-            onChange={nameOnChange}
             placeholder="Enter your name"
+            onChange={nameOnChange}
           />
         </div>
+      </main>
 
-        <br />
+      {/* ---------------- Email ---------------- */}
 
-        {/* Email Input */}
+      <main>
         <div>
           <label>Email</label>
-          <br />
+        </div>
+
+        <div>
           <input
             type="email"
-            onChange={emailOnChange}
             placeholder="Enter your email"
+            onChange={emailOnChange}
           />
         </div>
+      </main>
 
-        <br />
+      {/* ---------------- Password ---------------- */}
 
-        {/* Password Input */}
+      <main>
         <div>
           <label>Password</label>
-          <br />
-          <input
-            type="password"
-            onChange={passwordOnChange}
-            placeholder="Enter your password"
-          />
         </div>
 
-        <br />
+        <div>
+          <input
+            type="password"
+            placeholder="Enter your password"
+            onChange={passwordOnChange}
+          />
+        </div>
+      </main>
 
-        {/* Submit Button */}
-        <button  type="submit">
+      {/* ---------------- Submit Button ---------------- */}
+
+      <main>
+        <button onClick={onSubmit}>
           Submit
         </button>
+      </main>
 
-      </form>
+      {/* ---------------- Display State ---------------- */}
+
+      <h3>Entered Information</h3>
+
+      <ul>
+        <li>Name: {name}</li>
+        <li>Email: {email}</li>
+        <li>Password: {password}</li>
+      </ul>
+
     </div>
   );
 }

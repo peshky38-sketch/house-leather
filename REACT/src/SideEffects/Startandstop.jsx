@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
 function Startandstop() {
-  const [seconds, setSeconds] = useState(0);
+ const [seconds, setSeconds] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
   const intervalRef = useRef(null);
 

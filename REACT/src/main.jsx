@@ -2,9 +2,9 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
 /*
-Import the Form component.
+Import the timer component.
 */
-import StateandEvents from "./StateandEvents/ColorsandCircles";
+import Startandstop from "./SideEffects/Startandstop.jsx";
 
 // ======================================
 // Render App
@@ -12,6 +12,6 @@ import StateandEvents from "./StateandEvents/ColorsandCircles";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <StateandEvents />
+    <Startandstop />
   </StrictMode>
 );

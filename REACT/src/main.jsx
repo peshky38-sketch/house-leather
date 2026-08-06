@@ -4,7 +4,7 @@ import { createRoot } from "react-dom/client";
 /*
 Import the timer component.
 */
-import Startandstop from "./SideEffects/Startandstop.jsx";
+import GitHubProject from "./GitHubProject";
 
 // ======================================
 // Render App
@@ -12,6 +12,6 @@ import Startandstop from "./SideEffects/Startandstop.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Startandstop />
+    <GitHubProject />
   </StrictMode>
 );

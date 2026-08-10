@@ -1,37 +1,41 @@
-import { useState ,useEffect} from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
-function GitHubProject() {
 
-    const [ people, setPeople ] = useState( [] );
-    //fetch api:axios.get("https://api.github.com/users").then((response) => {
-    //setPeople(response.data);
-    //});
-    const getUserdata = async () => {
-        try {
-            let response = await axios( {
-                method: "GET",
-                url: "https://api.github.com/users"
+import TopNav from "./TopNav";
+import InfoSection from "./InfoSection";
+import PersonCard from "./PersonCard";
 
-            } )
-        
-        setPeople( response.data );
-        } catch (e) {
-            console.error("Error fetching data:", e);
-        }
+function GithubProject() {
+  const [people, setPeople] = useState([]);
+
+  useEffect(() => {
+    const getUserData = async () => {
+      try {
+        const response = await axios.get("https://api.github.com/users", {
+          headers: {
+            Accept: "application/vnd.github+json",
+          },
+        });
+        setPeople(response.data);
+      } catch (e) {
+        console.error("Error is", e);
+      }
     };
 
-    console.log( people );
+    getUserData();
+  }, []);
 
-    useEffect( () => {
-        getUserdata();
-    }, [] );    
-    
-    return (
-        <div>
-            <h1>GitHub Project</h1>
-        </div>
-    );
-        
+  //lifecycle. githubProject
+
+  return (
+    <div>
+      <TopNav setPeople={setPeople} />
+      <InfoSection people={people} />
+      {people.map((person) => (
+        <PersonCard key={person.id} person={person} />
+      ))}
+    </div>
+  );
 }
 
-export default GitHubProject;
+export default GithubProject;

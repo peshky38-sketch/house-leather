@@ -1,0 +1,3 @@
+# Logger project log file
+is:2026-08-31T20:10:04.052866—--func:hello—time:0.09ms
+is:2026-08-31T20:10:04.101150—--func:big_count—time:2.1ms

@@ -17,7 +17,6 @@ _______________
 
 
 class BankAccount:
-
     def __init__(self, name, balance, account_no):
         self.name = name
         self.account_no = account_no

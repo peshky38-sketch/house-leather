@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Rachel Kanyoro",
+    "email": "rachel@example.com",
+    "devices": [
+      {
+        "type": "temperature_sensor",
+        "seconds": 10
+      }
+    ],
+    "offline": true
+  }
+]

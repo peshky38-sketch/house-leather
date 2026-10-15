@@ -1,4 +1,9 @@
 {
+    "python.defaultInterpreterPath": "${workspaceFolder}/FastApi/amazonapi/.venv/bin/python",
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/FastApi/amazonapi",
+        "${workspaceFolder}/FastApi/amazonapi/.venv/lib/python3.12/site-packages"
+    ],
     "editor.formatOnSave": true,
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter",

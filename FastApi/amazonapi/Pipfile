@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = {extras = ["standard"], version = "*"}
+prisma = "*"
+pydantic = {extras = ["email"], version = "*"}
+"pwdlib" = {extras = ["argon2"], version = "*"}
+pyjwt = "*"
+httpx = "*"
+python-multipart = "*"
+python-dotenv = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
